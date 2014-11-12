@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center">Round {{game.round}}</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <p class="text-center">
+            Beacon 1
+        </p>
+        <div class="beacon center-block" ng-class="beacon1.css">
+        </div>
+        <div id="bar-bacon1"></div>
+    </div>
+    <div class="col-md-2">
+        <div class="center-data">
+            <p class="text-center">
+                Remaining Time
+            </p>
+            <p class="text-center">
+                {{game.remainingString()}}
+            </p>
+        </div>
+        <div class="center-data">
+            <p class="text-center">
+                Total Scans
+            </p>
+            <p class="text-center">
+                {{game.scans}}
+            </p>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <p class="text-center">
+            Beacon 2
+        </p>
+        <div class="beacon center-block" ng-class="beacon2.css">
+        </div>
+        <div id="bar-bacon2"></div>
+    </div>
+</div>
